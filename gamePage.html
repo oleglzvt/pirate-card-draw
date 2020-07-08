@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirate Card Draw Game</title>
+    <link type="image" href="./assets/favicon.ico" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Piedra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body class="gameBody">
+    <div class="gameArea wrapper">
+        <div class="playerArea">
+            <div class="playerScore">
+            <!-- player score generated in JS -->
+            </div>
+            
+            <div class="card playerCard">
+                <div class="playerFlip">
+                    <div class="cardFront">
+                        <img src="./assets/pirateCard.jpg" alt="back of a pirate card with white skull on it">
+                    </div>
+
+                    <div class="cardBack">
+                        <!-- player card generated from API -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gameButtons desktopBtn wrapper">
+            <button class="btn draw">Draw</button>
+            <button class="btn home">Home</button>
+        </div>
+        
+        <div class="playerArea">
+            <div class="computerScore">
+            <!-- computer score generated in JS -->
+            </div>
+            
+            <div class="card computerCard">
+                <div class="computerFlip">
+                    <div class="cardFront">
+                        <img src="./assets/pirateCard.jpg" alt="back of a pirate card with white skull on it">
+                    </div>
+
+                    <div class="cardBack">
+                        <!-- computer card generated from API -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="gameButtons mobileBtn wrapper">
+        <button class="btn draw">Draw</button>
+        <button class="btn home">Home</button>
+    </div>
+    
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

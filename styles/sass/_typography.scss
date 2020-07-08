@@ -1,0 +1,27 @@
+h1 {
+    font-family: 'Piedra', cursive;
+}
+
+.homeBody h1 {
+    font-size: 100px;
+    letter-spacing: 2px;
+    color: #8da902;
+}
+
+.winBody h1,
+.loseBody h1 {
+    font-size: 60px;
+    color: #f5f5f5;
+}
+
+button,
+p {
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+p {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+}

@@ -1,0 +1,136 @@
+.wrapper {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+button {
+    border: none;
+    background-color: #800080;
+    color: #ffffff;
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+        &:hover,
+        &:focus,
+        &:focus-within {
+            width: 230px;
+            height: 70px;
+        }
+        &:active {
+            width: 200px;
+            height: auto;
+            background-color: #650165;
+        }
+}
+
+p {
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5% auto;
+}
+
+.homeBody,
+.gameBody,
+.winBody,
+.loseBody {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+// home page styling
+.homeBody {
+    background-image: url('.././assets/homeBackground.jpg');
+}
+
+.homeContent,
+.endContent {
+    padding: 40px;
+    text-align: center;
+        h1 {
+            margin: 0 auto;
+        }
+        p {
+            margin: 20px auto;
+            width: 50%;
+        }
+        button {
+            margin: 20px auto 0 auto;
+        }
+}
+
+// game area styling
+.gameBody {
+    background-image: url('.././assets/gameBackground.jpg');
+    background-repeat: repeat;
+}
+
+.gameArea {
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+.playerArea {
+    width: 30%;
+    margin: 8% auto;
+        p {
+            height: 112px;
+        }
+}
+
+.card {
+    padding: 10px;
+        img {
+            border-radius: 20px;
+        }
+}
+
+// end pages styling
+.winBody {
+    background-color: #65cfdc;
+}
+
+.loseBody {
+    background-color: #25011d;
+}
+
+.winBody img,
+.loseBody img{
+    width: 30%;
+    min-width: 200px;
+    margin: 20px auto 10px auto;
+}
+
+// buttons styling
+.home {
+    display: block;
+    text-align: center;
+}
+
+.gameButtons {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        button {
+            margin-bottom: 20px;
+        }
+}
+
+.mobileBtn {
+    display: none;
+}
