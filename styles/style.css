@@ -290,6 +290,7 @@ button {
 button:hover, button:focus, button:focus-within {
   width: 230px;
   height: 70px;
+  cursor: pointer;
 }
 
 button:active {

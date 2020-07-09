@@ -25,6 +25,7 @@ button {
         &:focus-within {
             width: 230px;
             height: 70px;
+            cursor: pointer;
         }
         &:active {
             width: 200px;
