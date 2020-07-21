@@ -15,8 +15,8 @@ cardApp.url = 'https://deckofcardsapi.com/api/deck/new/draw/?count=2';
 cardApp.init = function(){
 
     // Display score for player and computer
-    $('.playerScore').html(`<p>Player Score: ${cardApp.playerScore}</p>`);
-    $('.computerScore').html(`<p>Computer Score: ${cardApp.computerScore}</p>`);
+    $('.playerScore').html(`<p>Player: ${cardApp.playerScore}</p>`);
+    $('.computerScore').html(`<p>Computer: ${cardApp.computerScore}</p>`);
     
     $('.draw').on('click', function(){
         // Make API request to access cards -> https://deckofcardsapi.com/
@@ -65,8 +65,8 @@ cardApp.init = function(){
             const setInitialScore = () => {
                 cardApp.playerScore = 0;
                 cardApp.computerScore = 0;
-                $('.playerScore').html(`<p>Player Score: ${cardApp.playerScore}</p>`);
-                $('.computerScore').html(`<p>Computer Score: ${cardApp.computerScore}</p>`);
+                $('.playerScore').html(`<p>Player: ${cardApp.playerScore}</p>`);
+                $('.computerScore').html(`<p>Computer: ${cardApp.computerScore}</p>`);
             }
 
             // Check for winning score
@@ -87,13 +87,13 @@ cardApp.init = function(){
             if (result.cards[0].weight > result.cards[1].weight) {
                 setTimeout(function() {
                     cardApp.playerScore += 1;
-                    $('.playerScore').html(`<p>Player Score: ${cardApp.playerScore}</p>`);
+                    $('.playerScore').html(`<p>Player: ${cardApp.playerScore}</p>`);
                     checkForWin();
                 }, 1500)
             } else if (result.cards[0].weight < result.cards[1].weight) {
                 setTimeout(function() {
                     cardApp.computerScore += 1;
-                    $('.computerScore').html(`<p>Computer Score: ${cardApp.computerScore}</p>`);
+                    $('.computerScore').html(`<p>Computer: ${cardApp.computerScore}</p>`);
                     checkForWin();
                 }, 2000)
             }
